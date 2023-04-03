@@ -63,6 +63,7 @@ const Footer = () => {
               className="p-text"
               type="text"
               name="name"
+              required
               placeholder="Your Name"
               value={name}
               onChange={handleChangeInput}
@@ -73,6 +74,7 @@ const Footer = () => {
               className="p-text"
               type="email"
               name="email"
+              required
               placeholder="Your Email"
               value={email}
               onChange={handleChangeInput}
@@ -82,6 +84,7 @@ const Footer = () => {
             <textarea
               className="p-text"
               name="message"
+              required
               value={message}
               placeholder="Your Message"
               onChange={handleChangeInput}
