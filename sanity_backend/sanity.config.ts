@@ -5,9 +5,9 @@ import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'BigEazi Portfolio',
+  title: 'my-portfolio',
 
-  projectId: 'k4bcp5o2',
+  projectId: '0qr2vr98',
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],
