@@ -15,7 +15,7 @@ const scaleVariants = {
   },
 };
 
-const Header = () => {
+const Header2 = () => {
   return (
     <div className="app__header app__flex">
       <motion.div
@@ -30,11 +30,6 @@ const Header = () => {
               <p className="p-text">Hi, I am</p>
               <h1 className="head-text">Isiaq</h1>
             </div>
-          </div>
-
-          <div className="tag-cmp app__flex">
-            <p className="p-text">Software Developer</p>
-            <p className="p-text">Full Stack</p>
           </div>
         </div>
       </motion.div>
@@ -59,14 +54,20 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {[images.node, images.react, images.sass].map((circle, index) => (
-          <div className="circle-cmp app__flex" key={`circle-${index}`}>
-            <img src={circle} alt="circle" />
-          </div>
-        ))}
+        <h2>Software Developer based in Lagos, Nigeria.</h2>
+        <p className="p-text">
+          I am a passionate software developer, who creates responsive websites
+          and high-performing applications to solve problems and make life
+          easier. I also enjoy teaching and mentoring beginners in coding.
+          <br />
+          This is my personal blog, where I focus mainly on business topics that
+          are tech related. If you want to have a website for an online or
+          physical business and other life activities, this blog is for you. Be
+          free to check some amazing contents on my webpage...
+        </p>
       </motion.div>
     </div>
   );
 };
 
-export default AppWrap(Header, "home");
+export default AppWrap(Header2, "home");

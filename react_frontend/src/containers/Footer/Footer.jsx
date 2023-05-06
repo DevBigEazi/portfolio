@@ -40,7 +40,7 @@ const Footer = () => {
 
   return (
     <>
-      <h1 className="header-text">Feel Free To Chat With Me</h1>
+      <h1 className="header-text">Connect With Me</h1>
       <div className="app__footer-cards">
         <div className="app__footer-card">
           <img src={images.email} alt="email" />
@@ -57,7 +57,7 @@ const Footer = () => {
       </div>
 
       {!isFormSubmitted ? (
-        <div className="app__footer-form app__flex">
+        <form className="app__footer-form app__flex" onSubmit={handleSubmit}>
           <div className="app__flex">
             <input
               className="p-text"
@@ -90,10 +90,10 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          <button type="submit" className="p-text" onClick={handleSubmit}>
+          <button className="p-text">
             {isLoading ? "Sending..." : "Send Message"}
           </button>
-        </div>
+        </form>
       ) : (
         <div>
           <h1 className="head-text" style={{ color: "green" }}>
