@@ -38,6 +38,10 @@ const Footer = () => {
     });
   };
 
+  const date = new Date();
+  const currentYear = date.getFullYear();
+  console.log(currentYear);
+
   return (
     <>
       <h1 className="header-text">Connect With Me</h1>
@@ -49,7 +53,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="app__footer-card">
-          <img src={images.mobile} alt="mobile" />
+          <img src={images.whatsapp} alt="mobile" />
           <a href="tel:+234 814 (599) 1080" className="p-text">
             +234 814 (599) 1080
           </a>
@@ -101,6 +105,11 @@ const Footer = () => {
           </h1>
         </div>
       )}
+
+      <div className="copyright">
+        <p className="p-text">Copyright &copy; {currentYear} DevBigEazi.</p>
+        <p className="p-text">All right reserved.</p>
+      </div>
     </>
   );
 };
