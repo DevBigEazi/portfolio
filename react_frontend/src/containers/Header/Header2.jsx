@@ -21,8 +21,7 @@ const Header2 = () => {
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
-        className="app__header-info"
-      >
+        className="app__header-info">
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
             <span>👋</span>
@@ -37,8 +36,7 @@ const Header2 = () => {
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__header-img"
-      >
+        className="app__header-img">
         <img src={images.profile} alt="photo of Isiaq" />
         <motion.img
           whileInView={{ scale: [0, 1] }}
@@ -52,18 +50,21 @@ const Header2 = () => {
       <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
-        className="app__header-circles"
-      >
+        className="app__header-circles">
         <h2>Software Developer based in Lagos, Nigeria.</h2>
         <p className="p-text">
-          I am a passionate software developer, who creates responsive websites
-          and high-performing applications to solve problems and make life
-          easier. I also enjoy teaching and mentoring beginners in coding.
-          <br />
-          This is my personal blog, where I focus mainly on business topics that
-          are tech related. If you want to have a website for an online or
-          physical business and other life activities, this blog is for you. Be
-          free to check some amazing contents on my webpage...
+          I am a full stack JavaScript/TypeScript developer specializing in web
+          development with 3 years of practical experience. I have a strong
+          foundation in creating dynamic and user-friendly applications, with
+          expertise in both front-end and back-end development. <br /> My
+          experience includes collaborating with teams to develop and enhance
+          websites using modern technologies, ensuring smooth functionality and
+          an optimal user experience. <br />
+          My role as a Junior Dev Ambassador at Celo Africa DAO allowed me to
+          engage with the web3 community, participate in DAO governance, and
+          stay updated with emerging technologies on the Celo Blockchain. I am
+          passionate about leveraging my skills to contribute to the success of
+          a progressive organization in either the web2 or web3 space.
         </p>
       </motion.div>
     </div>

@@ -1,5 +1,4 @@
 import email from "../assets/email.png";
-import mobile from "../assets/mobile.png";
 import api from "../assets/api.png";
 import cpp from "../assets/cpp.png";
 import css from "../assets/css.png";
@@ -26,6 +25,7 @@ import about04 from "../assets/about04.png";
 import profile from "../assets/profile.png";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
+import gifIcon from "../assets/gif-icon.png";
 
 import adidas from "../assets/adidas.png";
 import amazon from "../assets/amazon.png";
@@ -38,39 +38,39 @@ import aliu from "../assets/aliu.webp";
 import whatsapp from "../assets/whatsapp.png";
 
 export default {
-  email,
-  mobile,
-  api,
-  cpp,
-  css,
-  figma,
-  flutter,
-  git,
-  graphql,
-  html,
-  javascript,
-  mu5,
-  node,
-  python,
-  react,
-  redux,
-  sass,
-  typescript,
-  vue,
-  about01,
-  about02,
-  about03,
-  about04,
-  profile,
-  circle,
-  logo,
-  adidas,
-  amazon,
-  asus,
-  bolt,
-  nb,
-  skype,
-  spotify,
-  aliu,
-  whatsapp,
+    email,
+    api,
+    cpp,
+    css,
+    figma,
+    flutter,
+    git,
+    graphql,
+    html,
+    javascript,
+    mu5,
+    node,
+    python,
+    react,
+    redux,
+    sass,
+    typescript,
+    vue,
+    about01,
+    about02,
+    about03,
+    about04,
+    profile,
+    circle,
+    logo,
+    adidas,
+    amazon,
+    asus,
+    bolt,
+    nb,
+    skype,
+    spotify,
+    aliu,
+    whatsapp,
+    gifIcon
 };

@@ -184,8 +184,9 @@
     height: 50px;
     width: 150px;
     margin-top: 15rem;
-    animation: blink 1s linear infinite;
-  }
+    animation: blink 1s ease infinite;
+    -webkit-animation: blink 1s ease infinite;
+}
 }
 
 @keyframes blink {

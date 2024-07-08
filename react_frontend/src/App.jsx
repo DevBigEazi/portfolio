@@ -23,7 +23,11 @@ const App = () => {
     <>
       {welcome ? (
         <div className="welcome-logo">
-          <img src={images.logo} alt="logo" />
+          <img
+            style={{ height: "85px", width: "105px" }}
+            src={images.gifIcon}
+            alt="gif icon"
+          />
         </div>
       ) : (
         <div className="app">
