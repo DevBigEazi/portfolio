@@ -1,207 +1,205 @@
 .app__works {
-    flex: 1;
-    width: 100%;
-    flex-direction: column;
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
 }
 
 .app__work-filter {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 
-    margin: 4rem 0 2rem;
+  margin: 4rem 0 2rem;
 
-    .app__work-filter-item {
-        margin: 0.5rem;
-        padding: 0.5rem 1rem;
-        background-color: #ffff;
-        color: #000;
+  .app__work-filter-item {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #ffff;
+    color: #000;
 
-        font-weight: 800;
-        border-radius: 0.5rem;
-        -webkit-border-radius: 0.5rem;
-        -moz-border-radius: 0.5rem;
-        -ms-border-radius: 0.5rem;
-        -o-border-radius: 0.5rem;
-
-        cursor: pointer;
-        transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -ms-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-
-        &:hover {
-            background-color: var(--secondary-color);
-            color: #ffff;
-        }
-
-        @media screen and (min-width: 2000px) {
-            padding: 1rem 2rem;
-            border-radius: 0.85rem;
-            -webkit-border-radius: 0.85rem;
-            -moz-border-radius: 0.85rem;
-            -ms-border-radius: 0.85rem;
-            -o-border-radius: 0.85rem;
-        }
-       
-    }
-
-    .item-active {
-        background-color: var(--secondary-color);
-        color: #ffff;
-    }
-}
-
-.app__work-portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-    .app__work-item {
-        width: 270px;
-        margin: 2rem;
-        padding: 1rem;
-        flex-direction: column;
-
-        border-radius: 0.5rem;
-        -webkit-border-radius: 0.5rem;
-        -moz-border-radius: 0.5rem;
-        -ms-border-radius: 0.5rem;
-        -o-border-radius: 0.5rem;
-
-        background-color: #ffff;
-        color: #000;
-
-        cursor: pointer;
-        transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -ms-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-
-        &:hover {
-            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-        }
-
-        @media screen and (min-width: 2000px) {
-            width: 470px;
-            padding: 1.25rem;
-            border-radius: 0.75rem;
-            -webkit-border-radius: 0.75rem;
-            -moz-border-radius: 0.75rem;
-            -ms-border-radius: 0.75rem;
-            -o-border-radius: 0.75rem;
-        }
-        @media screen and (max-width: 300px) {
-            margin: 1rem;
-            width: 100%;
-        }
-    }
-}
-
-.app__work-img {
-    width: 100%;
-    height: 230px;
-
-    position: relative;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 0.5rem;
-        -webkit-border-radius: 0.5rem;
-        -moz-border-radius: 0.5rem;
-        -ms-border-radius: 0.5rem;
-        -o-border-radius: 0.5rem;
-    }
-
-    @media screen and (min-width: 2000px) {
-        width: 350px;
-    }
-}
-
-.app__work-hover {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-
-    opacity: 0;
+    font-weight: 800;
     border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
+
+    cursor: pointer;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
 
-    div {
-        width: 50PX;
-        height: 50PX;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #ffff;
-
-        font-family: var(--font-base);
-        margin: 1rem;
-        font-weight: 800;
-         
-        cursor: pointer;
-
-        transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -ms-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-
-        svg {
-            width: 50%;
-            height: 50%;
-            color: var(--white-color);
-        }
+    &:hover {
+      background-color: var(--secondary-color);
+      color: #ffff;
     }
+
+    @media screen and (min-width: 2000px) {
+      padding: 1rem 2rem;
+      border-radius: 0.85rem;
+      -webkit-border-radius: 0.85rem;
+      -moz-border-radius: 0.85rem;
+      -ms-border-radius: 0.85rem;
+      -o-border-radius: 0.85rem;
+    }
+  }
+
+  .item-active {
+    background-color: var(--secondary-color);
+    color: #ffff;
+  }
+}
+
+.app__work-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  .app__work-item {
+    width: 270px;
+    margin: 2rem;
+    padding: 1rem;
+    flex-direction: column;
+
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+
+    background-color: #ffff;
+    color: #000;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 470px;
+      padding: 1.25rem;
+      border-radius: 0.75rem;
+      -webkit-border-radius: 0.75rem;
+      -moz-border-radius: 0.75rem;
+      -ms-border-radius: 0.75rem;
+      -o-border-radius: 0.75rem;
+    }
+    @media screen and (max-width: 300px) {
+      margin: 1rem;
+      width: 100%;
+    }
+  }
+}
+
+.app__work-img {
+  width: 100%;
+  height: 230px;
+
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+  }
+
+  @media screen and (min-width: 2000px) {
+    width: 350px;
+  }
+}
+
+.app__work-hover {
+  position: absolute;
+  background-color: rgba(225, 220, 220, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  opacity: 1;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+
+  div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffff;
+
+    font-family: var(--font-base);
+    margin: 1rem;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+
+    svg {
+      width: 50%;
+      height: 50%;
+      color: var(--white-color);
+    }
+  }
 }
 
 .app__work-content {
-    position: relative;
-    width: 100%;
-    padding: 0.5rem;
-    flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding: 0.5rem;
+  flex-direction: column;
 
-    h4 {
-        margin-top: 1rem;
-        line-height: 1.5;
-    }
+  h4 {
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
 
-    .app__work-tag {
-        position: absolute;
-        padding: 0.5rem 1rem;
-        background-color: #ffff;
+  .app__work-tag {
+    position: absolute;
+    padding: 0.5rem 1rem;
+    background-color: #ffff;
 
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 
-        top: -25px;
-
-}
+    top: -25px;
+  }
 }

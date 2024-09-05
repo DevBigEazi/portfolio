@@ -51,20 +51,21 @@ const Header2 = () => {
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
         className="app__header-circles">
-        <h2>Software Developer based in Lagos, Nigeria.</h2>
+        <h2>Full-Stack Software Engineer based in Lagos, Nigeria.</h2>
         <p className="p-text">
-          I am a full stack JavaScript/TypeScript developer specializing in web
-          development with 3 years of practical experience. I have a strong
-          foundation in creating dynamic and user-friendly applications, with
-          expertise in both front-end and back-end development. <br /> My
-          experience includes collaborating with teams to develop and enhance
-          websites using modern technologies, ensuring smooth functionality and
-          an optimal user experience. <br />
-          My role as a Junior Dev Ambassador at Celo Africa DAO allowed me to
-          engage with the web3 community, participate in DAO governance, and
-          stay updated with emerging technologies on the Celo Blockchain. I am
-          passionate about leveraging my skills to contribute to the success of
-          a progressive organization in either the web2 or web3 space.
+          I am a full-stack JavaScript/TypeScript engineer with a passion for
+          building mobile software using React Native. With 3 years of hands-on
+          experience, I have a solid foundation in creating dynamic and
+          user-friendly web and mobile applications. My expertise includes
+          collaborating with cross-functional teams to develop and enhance both
+          mobile and web apps, ensuring smooth functionality and delivering an
+          optimal user experience. <br />
+          My role as a software engineer at Celo Africa DAO allowed me to engage
+          with the web3 community, participate in DAO governance, and stay
+          updated with emerging technologies on the Celo Blockchain and other
+          EVM chains. I am passionate about leveraging my skills to contribute
+          to the success of a progressive organization in either the web2 or
+          web3 space.
         </p>
       </motion.div>
     </div>

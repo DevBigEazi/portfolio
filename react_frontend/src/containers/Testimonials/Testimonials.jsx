@@ -8,7 +8,6 @@ import { AppWrap, MotionWrap } from "../../AppWrapper";
 
 const Testimonials = () => {
   const [index, setIndex] = useState(0);
-
   const [testimonials, setTestimonials] = useState([]);
 
   const handleClick = (index) => {
@@ -22,6 +21,16 @@ const Testimonials = () => {
       setTestimonials(data);
     });
   }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) =>
+        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 15000); // 15000ms = 30 seconds
+
+    return () => clearInterval(interval); // Clear the interval on component unmount
+  }, [testimonials.length]);
 
   const test = testimonials[index];
 
@@ -44,16 +53,14 @@ const Testimonials = () => {
               className="app__flex"
               onClick={() =>
                 handleClick(index === 0 ? testimonials.length - 1 : index - 1)
-              }
-            >
+              }>
               <HiChevronLeft />
             </div>
             <div
               className="app__flex"
               onClick={() =>
                 handleClick(index === testimonials.length - 1 ? 0 : index + 1)
-              }
-            >
+              }>
               <HiChevronRight />
             </div>
           </div>
